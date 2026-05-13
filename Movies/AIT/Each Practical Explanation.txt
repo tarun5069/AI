@@ -1,0 +1,380 @@
+# 1. A* Algorithm Practical
+
+## Aim
+
+To implement A* Algorithm for finding shortest path in a graph.
+
+---
+
+## What is A* Algorithm?
+
+A* is a searching algorithm used to find the shortest path between nodes.
+
+It uses:
+
+* `g(n)` → actual cost from start node
+* `h(n)` → heuristic estimated cost
+* `f(n) = g(n) + h(n)`
+
+---
+
+## Main Functions
+
+### Graph Class
+
+Stores graph using adjacency list.
+
+---
+
+### `get_neighbors(v)`
+
+Returns neighboring nodes.
+
+Example:
+
+```python id="xbgvko"
+'A': [('B',1), ('C',3)]
+```
+
+---
+
+### `h(n)`
+
+Heuristic function.
+
+Gives estimated distance to goal node.
+
+---
+
+### `a_star_algorithm(start_node, stop_node)`
+
+Main searching function.
+
+Steps:
+
+1. Add start node to open list
+2. Select node with lowest cost
+3. Visit neighbors
+4. Update path cost
+5. Stop when destination reached
+
+---
+
+## Output
+
+```text id="58bif7"
+Path found: ['A', 'B', 'D']
+```
+
+---
+
+## Viva Answers
+
+### What is heuristic function?
+
+It estimates cost from current node to goal.
+
+### Advantage of A*?
+
+Finds shortest path efficiently.
+
+---
+
+# 2. Selection Sort Practical
+
+## Aim
+
+To implement Greedy Search Algorithm using Selection Sort.
+
+---
+
+## What is Selection Sort?
+
+Selection sort repeatedly selects smallest element and places it at correct position.
+
+---
+
+## Working
+
+### Step 1
+
+Find minimum element.
+
+### Step 2
+
+Swap with current index.
+
+### Step 3
+
+Repeat for remaining array.
+
+---
+
+## Example
+
+Initial array:
+
+```python id="n7bxwv"
+[-2, 45, 0, 11]
+```
+
+Sorted array:
+
+```python id="b8mvt7"
+[-2, 0, 11, 45]
+```
+
+---
+
+## Time Complexity
+
+```text id="7jlwm2"
+O(n²)
+```
+
+---
+
+## Viva Answers
+
+### Which technique is used?
+
+Greedy approach.
+
+### Is selection sort stable?
+
+No.
+
+---
+
+# 3. N-Queens Problem
+
+## Aim
+
+To solve N-Queens problem using Backtracking.
+
+---
+
+## What is N-Queens Problem?
+
+Place N queens on chessboard so that:
+
+* no two queens attack each other.
+
+Queens should not be in:
+
+* same row
+* same column
+* same diagonal
+
+---
+
+## Main Functions
+
+### `isSafe()`
+
+Checks whether queen can be placed safely.
+
+Checks:
+
+* left row
+* upper diagonal
+* lower diagonal
+
+---
+
+### `solveNQUtil()`
+
+Recursive backtracking function.
+
+Steps:
+
+1. Place queen
+2. Check next column
+3. If failed, backtrack
+
+---
+
+### `solveNQ()`
+
+Driver function.
+
+Creates board and starts recursion.
+
+---
+
+## Output
+
+```text id="0xy5ff"
+0 0 1 0
+1 0 0 0
+0 0 0 1
+0 1 0 0
+```
+
+---
+
+## Viva Answers
+
+### Which technique is used?
+
+Backtracking.
+
+### What is backtracking?
+
+Trying solution recursively and undoing wrong choices.
+
+---
+
+# 4. Chatbot Program
+
+## Aim
+
+To develop an elementary chatbot for customer interaction.
+
+---
+
+## What is Chatbot?
+
+A chatbot is a program that communicates with users automatically.
+
+---
+
+## Main Functions
+
+### `greet()`
+
+Greets user.
+
+---
+
+### `remind_name()`
+
+Asks user name.
+
+---
+
+### `guess_age()`
+
+Calculates age using remainder logic.
+
+Formula:
+
+```python id="v4wr2c"
+(rem3 * 70 + rem5 * 21 + rem7 * 15) % 105
+```
+
+---
+
+### `count()`
+
+Counts numbers up to user input.
+
+---
+
+### `test()`
+
+Asks programming question.
+
+---
+
+### `end()`
+
+Ends chatbot conversation.
+
+---
+
+## Concepts Used
+
+* Functions
+* Input/output
+* Loops
+* Conditions
+
+---
+
+## Viva Answers
+
+### What is chatbot?
+
+Program that interacts with users automatically.
+
+### Applications of chatbot?
+
+Customer support, websites, banking apps.
+
+---
+
+# 5. Help Desk Management System
+
+## Aim
+
+To implement Expert System for Help Desk Management.
+
+---
+
+## What is Expert System?
+
+An AI system that provides solutions based on stored knowledge.
+
+---
+
+## Working
+
+### Dictionary
+
+Stores problems and solutions.
+
+Example:
+
+```python id="j01i3l"
+"Printer not working":
+"Check printer connection"
+```
+
+---
+
+### `handle_request()`
+
+Checks user problem and returns solution.
+
+---
+
+### Main Loop
+
+Runs continuously until user types:
+
+```text id="j1gz0e"
+exit
+```
+
+---
+
+## Output Example
+
+```text id="6lc92s"
+What's the problem?
+Printer not working
+
+Check that it's turned on and connected to the network
+```
+
+---
+
+## Concepts Used
+
+* Dictionary
+* Functions
+* Loops
+* Conditions
+
+---
+
+## Viva Answers
+
+### What is expert system?
+
+AI system that gives decision using stored knowledge.
+
+### Knowledge base means?
+
+Collection of stored information/rules.

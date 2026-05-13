@@ -1,0 +1,595 @@
+Your Cloud Computing practical file includes 5 main practicals. I’ll explain each in simple viva style and also give important questions your mam can ask.
+
+Practical 1: Amazon Web Services EC2 Case Study
+
+What is EC2?
+
+EC2 stands for Elastic Compute Cloud.
+It is a virtual server provided by AWS in the cloud.
+
+Instead of buying a physical computer/server, we can rent a virtual machine from AWS.
+
+Main Concepts
+
+EC2 = Virtual machine in cloud
+
+On-demand instance = Pay only when using
+
+AMI = Amazon Machine Image (OS template)
+
+VPC = Virtual Private Cloud
+
+Subnet = Small network inside VPC
+
+Elastic IP = Static public IP
+
+
+Steps Performed
+
+1. Login into AWS
+
+
+2. Open EC2 Dashboard
+
+
+3. Select region
+
+
+4. Launch instance
+
+
+5. Choose AMI
+
+
+6. Select instance type (t2.micro)
+
+
+7. Configure VPC and subnet
+
+
+8. Assign IP
+
+
+9. Launch EC2 instance
+
+
+
+Why EC2 is used?
+
+Hosting websites
+
+Cloud applications
+
+Testing servers
+
+Scalable computing
+
+
+Advantages
+
+Cost saving
+
+Scalable
+
+Easy deployment
+
+No physical hardware needed
+
+
+Viva Questions
+
+1. What is EC2?
+
+
+2. What does Elastic mean in EC2?
+
+
+3. What is AMI?
+
+
+4. Difference between public and private subnet?
+
+
+5. What is VPC?
+
+
+6. What is Elastic IP?
+
+
+7. Why t2.micro is used?
+
+
+8. Difference between on-demand and spot instance?
+
+
+9. What is cloud computing?
+
+
+10. Which cloud service model is EC2?
+
+
+
+Answer: IaaS (Infrastructure as a Service)
+
+
+---
+
+Practical 2: Google App Engine
+
+What is Google App Engine?
+
+Google App Engine (GAE) is a Platform as a Service (PaaS).
+
+It allows developers to build and host web applications on Google’s cloud.
+
+Main Features
+
+Automatic scaling
+
+High security
+
+Reliability
+
+Platform independence
+
+No server management required
+
+
+Service Models Mentioned
+
+IaaS
+
+PaaS
+
+SaaS
+
+
+Examples
+
+Khan Academy
+
+Best Buy
+
+
+Important Terms
+
+Cloud SQL
+
+Memcache
+
+Blobstore
+
+Datastore
+
+
+Advantages
+
+Automatic scaling
+
+Cost saving
+
+Fast deployment
+
+Secure infrastructure
+
+
+Viva Questions
+
+1. What is Google App Engine?
+
+
+2. Which service model is GAE?
+
+
+
+Answer: PaaS
+
+3. What is scalability?
+
+
+4. Why is App Engine called fully managed?
+
+
+5. What is Cloud SQL?
+
+
+6. Difference between IaaS and PaaS?
+
+
+7. Give advantages of GAE.
+
+
+8. What is automatic scaling?
+
+
+9. Why cloud platforms are preferred?
+
+
+10. Name some companies using GAE.
+
+
+
+
+---
+
+Practical 3: Salesforce Application using Apex
+
+What is Salesforce?
+
+Salesforce is a cloud-based CRM platform.
+
+CRM = Customer Relationship Management.
+
+It helps companies manage customers, sales, and support.
+
+What is Apex?
+
+Apex is a programming language developed by Salesforce.
+
+It is:
+
+Object-oriented
+
+Strongly typed
+
+Java-like language
+
+
+Features of Apex
+
+Supports DML operations
+
+SOQL/SOSL queries
+
+Easy testing
+
+Multitenant support
+
+Automatic upgrades
+
+
+DML Operations
+
+Insert
+
+Update
+
+Delete
+
+Upsert
+
+
+SOQL
+
+Salesforce Object Query Language used to fetch data.
+
+Why Apex is Used?
+
+For complex business logic which cannot be done using normal Salesforce tools.
+
+Viva Questions
+
+1. What is Salesforce?
+
+
+2. What is CRM?
+
+
+3. What is Apex?
+
+
+4. Why Apex is called strongly typed?
+
+
+5. What is SOQL?
+
+
+6. Difference between SOQL and SQL?
+
+
+7. What are DML operations?
+
+
+8. What is multitenant environment?
+
+
+9. Why Apex is similar to Java?
+
+
+10. What is trigger in Salesforce?
+
+
+
+
+---
+
+Practical 4: Custom Application using Salesforce Cloud
+
+Aim
+
+To create a custom application in Salesforce.
+
+What is Custom App?
+
+A collection of:
+
+Tabs
+
+Objects
+
+Features
+
+Pages
+
+
+working together for a specific purpose.
+
+Steps
+
+1. Open Setup
+
+
+2. Go to Apps
+
+
+3. Click New
+
+
+4. Enter app name
+
+
+5. Add logo
+
+
+6. Select tabs
+
+
+7. Assign profiles
+
+
+8. Save application
+
+
+
+Lightning Platform
+
+Salesforce’s PaaS platform used for app development.
+
+Important Clouds
+
+Sales Cloud
+
+Community Cloud
+
+Service Cloud
+
+
+Difference Between Custom App and Console App
+
+Custom App
+
+General application with tabs and objects.
+
+Console App
+
+Special UI with tabbed workspace for productivity.
+
+Viva Questions
+
+1. What is Salesforce Cloud?
+
+
+2. What is Lightning Platform?
+
+
+3. What is a custom app?
+
+
+4. What is Community Cloud?
+
+
+5. What is Sales Cloud?
+
+
+6. Difference between custom app and console app?
+
+
+7. Why profiles are assigned?
+
+
+8. What is AppExchange?
+
+
+9. What is SaaS?
+
+
+10. Which service model does Salesforce mainly provide?
+
+
+
+Answer: SaaS and PaaS
+
+
+---
+
+Practical 5: Private Cloud using VMware ESXi + HDFS
+
+Aim
+
+To setup a private cloud over LAN.
+
+What is Private Cloud?
+
+A cloud infrastructure used only within an organization.
+
+What is VMware ESXi?
+
+A hypervisor used to create and manage virtual machines.
+
+What is HDFS?
+
+Hadoop Distributed File System.
+
+Used to store files in blocks across multiple systems.
+
+Main Operations
+
+Divide file into blocks
+
+Upload/download files
+
+Encryption
+
+Cloud controller setup
+
+
+Requirements
+
+64-bit processor
+
+Minimum 4 GB RAM
+
+Virtualization enabled
+
+Network adapters
+
+
+Steps Performed
+
+1. Install ESXi
+
+
+2. Configure management network
+
+
+3. Set IPv4 and DNS
+
+
+4. Create datacenter
+
+
+5. Create cluster
+
+
+6. Add hosts
+
+
+7. Configure failover and DRS
+
+
+
+Important Terms
+
+Hypervisor
+
+Software that creates virtual machines.
+
+DRS
+
+Distributed Resource Scheduler.
+
+Balances VM load automatically.
+
+Failover
+
+Backup system if one host fails.
+
+Viva Questions
+
+1. What is private cloud?
+
+
+2. What is VMware ESXi?
+
+
+3. What is virtualization?
+
+
+4. What is hypervisor?
+
+
+5. What is HDFS?
+
+
+6. What is SaaS?
+
+
+7. What is cluster?
+
+
+8. What is failover?
+
+
+9. What is DRS?
+
+
+10. Why files are divided into blocks in HDFS?
+
+
+
+
+---
+
+Most Important Overall Viva Questions
+
+1. What is cloud computing?
+
+
+2. Types of cloud deployment models?
+
+Public
+
+Private
+
+Hybrid
+
+
+
+3. Service models of cloud?
+
+IaaS
+
+PaaS
+
+SaaS
+
+
+
+4. Difference between virtualization and cloud computing?
+
+
+5. Advantages of cloud computing?
+
+
+6. What is scalability?
+
+
+7. What is virtualization?
+
+
+8. What is multitenancy?
+
+
+9. Difference between public and private cloud?
+
+
+10. Give real-world examples of cloud services.
+
+
+
+Your manual mainly focuses on:
+
+AWS EC2
+
+Google App Engine
+
+Salesforce
+
+VMware ESXi
+
+HDFS
+
+SaaS/PaaS/IaaS concepts
+
+
+So prepare these properly.

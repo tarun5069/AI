@@ -1,0 +1,490 @@
+First Practical explanation
+
+
+# BFS and DFS Graph Traversal Practical
+
+## Aim
+
+To implement Breadth First Search (BFS) and Depth First Search (DFS) traversal on a graph.
+
+---
+
+# What is Graph?
+
+A graph is a data structure made of:
+
+* Vertices (nodes)
+* Edges (connections)
+
+Example:
+
+```text id="f0l4dn"
+0 ---- 1
+|      |
+2      3
+```
+
+---
+
+# What is DFS?
+
+DFS means:
+
+```text id="3drh7k"
+Depth First Search
+```
+
+* DFS visits nodes deeply first.
+* Uses recursion or stack.
+
+Example:
+
+```text id="ekntb7"
+0 → 1 → 3 → backtrack → 4 → backtrack → 2 → 5
+```
+
+---
+
+# What is BFS?
+
+BFS means:
+
+```text id="jqkm1k"
+Breadth First Search
+```
+
+* BFS visits nodes level by level.
+* Uses Queue data structure.
+
+Example:
+
+```text id="lf5ks2"
+0 → 1 → 2 → 3 → 4 → 5
+```
+
+---
+
+# Explanation of Program
+
+---
+
+## Import Statement
+
+```python id="iv6r8r"
+from collections import defaultdict, deque
+```
+
+### Explanation
+
+* `defaultdict`
+
+  * automatically creates empty list for nodes.
+* `deque`
+
+  * used as Queue in BFS traversal.
+
+---
+
+# Graph Class
+
+```python id="0e1ivg"
+class Graph:
+```
+
+### Explanation
+
+* Graph class is created.
+* Contains all graph operations.
+
+---
+
+# Constructor Function
+
+```python id="8dyq1m"
+def __init__(self):
+    self.graph = defaultdict(list)
+```
+
+### Explanation
+
+* Initializes empty graph.
+* Graph stored as adjacency list.
+
+Example:
+
+```text id="9sm8m8"
+0 → [1,2]
+1 → [0,3,4]
+```
+
+---
+
+# Add Edge Function
+
+```python id="x6vdu5"
+def add_edge(self, u, v):
+```
+
+### Explanation
+
+* Adds edge between two nodes.
+
+```python id="8lc2gc"
+self.graph[u].append(v)
+self.graph[v].append(u)
+```
+
+* Since graph is undirected:
+
+  * both nodes connect to each other.
+
+Example:
+
+```python id="hmj0ks"
+g.add_edge(0,1)
+```
+
+Means:
+
+```text id="exk74j"
+0 ↔ 1
+```
+
+---
+
+# DFS Function
+
+```python id="e2np0m"
+def dfs(self, start):
+```
+
+### Explanation
+
+* Starts DFS traversal from starting node.
+
+---
+
+## Visited Set
+
+```python id="e8nh8r"
+visited = set()
+```
+
+### Explanation
+
+* Stores visited nodes.
+* Prevents revisiting same node.
+
+---
+
+## Recursive DFS Call
+
+```python id="kgn83f"
+self._dfs_recursive(start, visited)
+```
+
+### Explanation
+
+* Calls recursive DFS function.
+
+---
+
+# Recursive DFS Function
+
+```python id="q2xzw9"
+def _dfs_recursive(self, node, visited):
+```
+
+### Explanation
+
+* Performs recursive depth-first traversal.
+
+---
+
+## Mark Node Visited
+
+```python id="7v6j5n"
+visited.add(node)
+```
+
+### Explanation
+
+* Current node marked as visited.
+
+---
+
+## Print Node
+
+```python id="4n40mc"
+print(node, end=" ")
+```
+
+### Explanation
+
+* Displays current node.
+
+---
+
+## Traverse Neighbors
+
+```python id="0hngjk"
+for neighbor in self.graph[node]:
+```
+
+### Explanation
+
+* Visits all adjacent nodes.
+
+---
+
+## Recursive Visit
+
+```python id="hzqjlwm"
+if neighbor not in visited:
+    self._dfs_recursive(neighbor, visited)
+```
+
+### Explanation
+
+* If node not visited:
+
+  * recursively explore it.
+
+---
+
+# BFS Function
+
+```python id="jlwm5l"
+def bfs(self, start):
+```
+
+### Explanation
+
+* Starts Breadth First Search traversal.
+
+---
+
+# Queue Creation
+
+```python id="lht4j8"
+queue = deque([start])
+```
+
+### Explanation
+
+* Queue stores nodes for BFS traversal.
+
+---
+
+# Add Start Node to Visited
+
+```python id="9uv8h4"
+visited.add(start)
+```
+
+### Explanation
+
+* Marks starting node as visited.
+
+---
+
+# BFS Loop
+
+```python id="q7jlwm"
+while queue:
+```
+
+### Explanation
+
+* Runs until queue becomes empty.
+
+---
+
+# Remove Node from Queue
+
+```python id="qep9u0"
+node = queue.popleft()
+```
+
+### Explanation
+
+* Removes first node from queue.
+* FIFO principle followed.
+
+---
+
+# Print Node
+
+```python id="tx1e4x"
+print(node, end=" ")
+```
+
+### Explanation
+
+* Displays current node.
+
+---
+
+# Traverse Neighbors
+
+```python id="1a9gpi"
+for neighbor in self.graph[node]:
+```
+
+### Explanation
+
+* Checks all connected nodes.
+
+---
+
+# Add Neighbor to Queue
+
+```python id="mdjqg6"
+if neighbor not in visited:
+    visited.add(neighbor)
+    queue.append(neighbor)
+```
+
+### Explanation
+
+* If neighbor not visited:
+
+  * mark visited
+  * add to queue
+
+---
+
+# Creating Graph Object
+
+```python id="a7y0u2"
+g = Graph()
+```
+
+### Explanation
+
+* Creates object of Graph class.
+
+---
+
+# Adding Edges
+
+```python id="jlwmqp"
+g.add_edge(0, 1)
+g.add_edge(0, 2)
+g.add_edge(1, 3)
+g.add_edge(1, 4)
+g.add_edge(2, 5)
+```
+
+### Explanation
+
+* Creates graph connections.
+
+Graph Structure:
+
+```text id="2m5bz9"
+       0
+      / \
+     1   2
+    / \   \
+   3   4   5
+```
+
+---
+
+# DFS Traversal
+
+```python id="r36w3x"
+g.dfs(0)
+```
+
+### Output
+
+```text id="g42qae"
+0 1 3 4 2 5
+```
+
+### Explanation
+
+* DFS goes deep first before backtracking.
+
+---
+
+# BFS Traversal
+
+```python id="zjlwm0"
+g.bfs(0)
+```
+
+### Output
+
+```text id="34wnrx"
+0 1 2 3 4 5
+```
+
+### Explanation
+
+* BFS visits nodes level by level.
+
+---
+
+# Time Complexity
+
+## DFS
+
+```text id="sdjlwm"
+O(V + E)
+```
+
+## BFS
+
+```text id="bdf2gf"
+O(V + E)
+```
+
+Where:
+
+* V = Vertices
+* E = Edges
+
+---
+
+# Viva Questions
+
+## What is graph?
+
+A graph is collection of nodes and edges.
+
+---
+
+## What is DFS?
+
+DFS explores nodes deeply before backtracking.
+
+---
+
+## What is BFS?
+
+BFS visits nodes level by level.
+
+---
+
+## Which data structure is used in BFS?
+
+Queue.
+
+---
+
+## Which data structure is used in DFS?
+
+Stack / Recursion stack.
+
+---
+
+## Difference between BFS and DFS?
+
+| BFS                  | DFS                              |
+| -------------------- | -------------------------------- |
+| Level wise traversal | Deep traversal                   |
+| Uses Queue           | Uses Stack/Recursion             |
+| Finds shortest path  | Does not guarantee shortest path |

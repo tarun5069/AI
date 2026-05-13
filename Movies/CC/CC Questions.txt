@@ -1,0 +1,236 @@
+Short Viva Answers – Cloud Computing Practicals
+
+Amazon Web Services EC2
+
+What is EC2?
+
+EC2 is a virtual server service provided by AWS.
+
+What is AMI?
+
+AMI is a template used to launch EC2 instances.
+
+What is VPC?
+
+VPC is a private virtual network in AWS.
+
+What is subnet?
+
+Subnet is a smaller network inside VPC.
+
+What is Elastic IP?
+
+Elastic IP is a static public IP address.
+
+What is t2.micro?
+
+A small AWS instance with 1 GB RAM and 1 vCPU.
+
+What is on-demand instance?
+
+Pay only when the instance is used.
+
+Which service model is EC2?
+
+IaaS.
+
+What is virtualization?
+
+Creating virtual machines using software.
+
+Why EC2 is used?
+
+For hosting applications and websites.
+
+
+---
+
+Google App Engine
+
+What is Google App Engine?
+
+A platform to develop and host web applications.
+
+Which service model is GAE?
+
+PaaS.
+
+What is scalability?
+
+Handling more users without performance loss.
+
+What is automatic scaling?
+
+Resources increase or decrease automatically.
+
+What is Cloud SQL?
+
+Managed database service by Google.
+
+What is Memcache?
+
+Temporary memory storage for fast access.
+
+What is Blobstore?
+
+Storage for large files.
+
+Advantage of GAE?
+
+No server management required.
+
+
+---
+
+Salesforce Apex
+
+What is Salesforce?
+
+A cloud-based CRM platform.
+
+What is CRM?
+
+Customer Relationship Management.
+
+What is Apex?
+
+Programming language of Salesforce.
+
+What is SOQL?
+
+Query language used in Salesforce.
+
+What is SOSL?
+
+Search language in Salesforce.
+
+What are DML operations?
+
+Insert, Update, Delete, Upsert.
+
+What is trigger?
+
+Code executed automatically on database events.
+
+Why Apex is called strongly typed?
+
+Variables must have data types.
+
+Why Apex is used?
+
+For complex business logic.
+
+
+---
+
+Salesforce Custom App
+
+What is custom application?
+
+Collection of tabs and objects for specific work.
+
+What is Lightning Platform?
+
+Platform to build Salesforce apps.
+
+What is Sales Cloud?
+
+CRM tool for sales management.
+
+What is Community Cloud?
+
+Platform for customer collaboration portals.
+
+What is AppExchange?
+
+Salesforce app marketplace.
+
+Difference between custom app and console app?
+
+Console app uses tabbed UI.
+
+What is SaaS?
+
+Software provided over internet.
+
+
+---
+
+VMware ESXi + HDFS
+
+What is private cloud?
+
+Cloud used by one organization only.
+
+What is VMware ESXi?
+
+Hypervisor used to create virtual machines.
+
+What is hypervisor?
+
+Software managing virtual machines.
+
+What is HDFS?
+
+Distributed file storage system.
+
+Why files are divided into blocks?
+
+For distributed storage and faster access.
+
+What is cluster?
+
+Group of connected systems.
+
+What is DRS?
+
+Balances workload automatically.
+
+What is failover?
+
+Backup support during failure.
+
+What is DNS?
+
+Converts domain names to IP addresses.
+
+Why encryption is used?
+
+To secure data.
+
+
+---
+
+Common Cloud Questions
+
+What is cloud computing?
+
+Providing services over internet.
+
+Types of cloud?
+
+Public, Private, Hybrid.
+
+Service models?
+
+IaaS, PaaS, SaaS.
+
+What is scalability?
+
+Increasing resources when needed.
+
+What is elasticity?
+
+Automatic resource adjustment.
+
+Advantage of cloud computing?
+
+Cost saving and flexibility.
+
+Difference between IaaS and PaaS?
+
+IaaS gives infrastructure, PaaS gives platform.
+
+What is data center?
+
+Place where servers are stored.
