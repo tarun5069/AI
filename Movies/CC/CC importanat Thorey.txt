@@ -1,0 +1,312 @@
+Practical 1 — Amazon EC2 and AWS Services
+
+Theory
+
+Amazon EC2 (Elastic Compute Cloud) is a web service provided by Amazon Web Services (AWS) that allows users to create and manage virtual servers in the cloud. It provides scalable computing resources according to user requirements. EC2 helps businesses avoid the cost of purchasing physical hardware.
+
+An EC2 instance is a virtual machine running on AWS infrastructure. Users can select different instance types based on CPU, memory, storage, and networking requirements. AWS follows a pay-as-you-go model, where users are charged only for the resources they use.
+
+Amazon EC2 supports automatic scaling, security groups, Elastic IP, and storage integration. Users can create, start, stop, reboot, and terminate instances at any time.
+
+Important Concepts
+
+AMI (Amazon Machine Image)
+
+AMI is a preconfigured template containing operating system and software configuration used to launch EC2 instances.
+
+VPC (Virtual Private Cloud)
+
+VPC is a virtual private network in AWS used to securely launch cloud resources.
+
+Subnet
+
+A subnet is a division of a VPC network used for organizing and securing resources.
+
+Elastic IP
+
+Elastic IP is a static public IP address used with EC2 instances.
+
+Security Group
+
+Security group acts as a firewall controlling inbound and outbound traffic for EC2 instances.
+
+Advantages of EC2
+
+On-demand computing
+
+Scalability
+
+Cost effective
+
+High reliability
+
+Secure cloud environment
+
+Easy server management
+
+
+Conclusion
+
+Thus, we studied Amazon EC2 web services and learned the process of creating and managing EC2 instances in AWS cloud.
+
+
+---
+
+Practical 2 — Installation and Configuration of Google App Engine
+
+Theory
+
+Google App Engine is a Platform as a Service (PaaS) provided by Google for developing and hosting web applications in Google-managed data centers. It allows developers to focus on coding without worrying about server management and infrastructure maintenance.
+
+Google App Engine automatically scales resources according to application traffic. It supports several programming languages such as Java, Python, PHP, and Go. It also provides built-in services for storage, authentication, caching, and security.
+
+App Engine is highly scalable and reliable because Google manages the infrastructure. It is mainly used for hosting dynamic web applications and mobile back-end services.
+
+Features of Google App Engine
+
+Automatic scaling
+
+Fully managed platform
+
+High security
+
+Load balancing
+
+Fast deployment
+
+Built-in services
+
+
+Types of Cloud Services in App Engine
+
+IaaS (Infrastructure as a Service)
+
+PaaS (Platform as a Service)
+
+SaaS (Software as a Service)
+
+
+Advantages
+
+No server maintenance
+
+Cost saving
+
+Reliable performance
+
+Platform independence
+
+Supports millions of users
+
+High scalability
+
+
+Conclusion
+
+Thus, we successfully installed and configured Google App Engine and studied its features and advantages.
+
+
+---
+
+Practical 3 — Creating Application in Salesforce using Apex
+
+Theory
+
+Salesforce is a cloud-based Customer Relationship Management (CRM) platform used for managing customer data, sales, marketing, and support services. It allows organizations to automate business processes and improve customer relationships.
+
+Apex is a proprietary programming language developed by Salesforce. It is strongly typed and object-oriented, similar to Java. Apex is used to add custom business logic to Salesforce applications.
+
+Apex supports database operations directly through SOQL and DML statements. It also provides support for triggers, loops, conditions, exception handling, and testing.
+
+Features of Apex
+
+Strongly typed language
+
+Object-oriented programming
+
+Java-like syntax
+
+Integrated database support
+
+Supports triggers and APIs
+
+Automatic upgrades
+
+Easy unit testing
+
+
+Important Concepts
+
+SOQL
+
+Salesforce Object Query Language is used to retrieve records from Salesforce database.
+
+SOSL
+
+Salesforce Object Search Language is used to search records across multiple objects.
+
+DML Operations
+
+DML operations are used to manipulate database records:
+
+Insert
+
+Update
+
+Delete
+
+Upsert
+
+
+Trigger
+
+A trigger automatically executes Apex code when database events occur.
+
+Advantages of Apex
+
+Easy cloud application development
+
+Secure multitenant environment
+
+Automatic updates
+
+Fast database operations
+
+Scalable platform
+
+
+Conclusion
+
+Thus, we learned Apex programming and created an application in Salesforce.com successfully.
+
+
+---
+
+Practical 4 — Design and Development of Custom Application using Salesforce Cloud
+
+Theory
+
+Salesforce Cloud is a cloud computing platform that provides CRM services, analytics, customer support, and application development tools. It helps organizations manage customer information and business processes efficiently.
+
+Salesforce provides Lightning Platform (Force.com), a Platform as a Service (PaaS) environment used for creating custom business applications. Developers can create apps using Apex, Visualforce, and Lightning components.
+
+Salesforce applications are accessible through web browsers and mobile devices. The platform supports automation, reporting, collaboration, and integration with third-party applications.
+
+Salesforce Cloud Services
+
+Sales Cloud
+
+Used for managing sales, customer data, leads, and opportunities.
+
+Service Cloud
+
+Used for customer support and service management.
+
+Community Cloud
+
+Used for collaboration between customers, partners, and employees.
+
+App Cloud
+
+Used for developing custom cloud applications.
+
+Custom Application
+
+A custom application is a collection of tabs, objects, and services designed to solve a specific business problem.
+
+Console Application
+
+A console application provides a tab-based interface that improves user productivity by allowing multiple tasks on a single screen.
+
+Advantages of Salesforce Cloud
+
+Easy application development
+
+Better customer management
+
+High scalability
+
+Secure cloud environment
+
+Real-time collaboration
+
+Easy customization
+
+
+Conclusion
+
+Thus, we designed and developed a custom application using Salesforce Cloud successfully.
+
+
+---
+
+Practical 5 — Setup SaaS Cloud using VMware ESXi and HDFS
+
+Theory
+
+VMware ESXi is a hypervisor used to create and manage virtual machines in a cloud environment. It allows multiple operating systems to run on a single physical machine using virtualization technology.
+
+In this practical, a private cloud environment is created over LAN using VMware ESXi. HDFS (Hadoop Distributed File System) is used for dividing files into blocks and storing them securely across distributed systems.
+
+The SaaS (Software as a Service) model allows users to access software applications through the internet without installing them locally.
+
+Important Concepts
+
+Hypervisor
+
+A hypervisor is software used to create and manage virtual machines.
+
+Virtual Machine
+
+A virtual machine is a software-based computer system that behaves like a physical computer.
+
+HDFS
+
+HDFS stores large files by dividing them into blocks across multiple systems.
+
+Cluster
+
+A cluster is a group of connected systems working together as a single system.
+
+Features of VMware ESXi
+
+Virtualization support
+
+Resource sharing
+
+High availability
+
+Secure infrastructure
+
+Easy management
+
+Better performance
+
+
+Hardware Requirements
+
+64-bit processor
+
+Minimum 4 GB RAM
+
+Gigabit network adapter
+
+Hardware virtualization enabled
+
+
+Advantages
+
+Efficient resource utilization
+
+Reduced hardware cost
+
+Easy backup and recovery
+
+Scalability
+
+Secure private cloud setup
+
+
+Conclusion
+
+Thus, we configured VMware ESXi and successfully setup a private cloud infrastructure using SaaS concepts.
