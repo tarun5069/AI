@@ -1,0 +1,553 @@
+AI Practical Exam Important Theory Notes
+
+1) DFS and BFS (Uninformed Search)
+
+Uninformed Search
+
+Also called Blind Search.
+
+No extra knowledge about goal node.
+
+Explores graph/tree using simple traversal methods.
+
+Examples: DFS and BFS.
+
+
+
+---
+
+DFS (Depth First Search)
+
+Definition
+
+DFS is a graph traversal algorithm that explores a path deeply before backtracking.
+
+Data Structure Used
+
+Stack
+
+Can also use Recursion
+
+
+Working
+
+1. Start from source node.
+
+
+2. Visit node and mark visited.
+
+
+3. Move to an unvisited adjacent node.
+
+
+4. Continue till dead end.
+
+
+5. Backtrack and explore remaining nodes.
+
+
+
+Advantages
+
+Uses less memory.
+
+Faster for deep solutions.
+
+
+Disadvantages
+
+Can go into infinite loop.
+
+May not give shortest path.
+
+
+Applications
+
+Cycle detection
+
+Path finding
+
+Maze solving
+
+
+Time Complexity
+
+O(V+E)
+
+Space Complexity
+
+O(V)
+
+
+---
+
+BFS (Breadth First Search)
+
+Definition
+
+BFS explores all neighbor nodes level by level.
+
+Data Structure Used
+
+Queue (FIFO)
+
+
+Working
+
+1. Insert source node in queue.
+
+
+2. Visit node and mark visited.
+
+
+3. Add all unvisited neighbors to queue.
+
+
+4. Repeat until queue becomes empty.
+
+
+
+Advantages
+
+Finds shortest path in unweighted graph.
+
+Complete and optimal.
+
+
+Disadvantages
+
+Requires more memory.
+
+Slower for deep graphs.
+
+
+Applications
+
+GPS navigation
+
+Social networks
+
+Shortest path problems
+
+
+Time Complexity
+
+O(V+E)
+
+Space Complexity
+
+O(V)
+
+
+---
+
+Difference Between DFS and BFS
+
+DFS	BFS
+
+Uses Stack	Uses Queue
+Goes depth wise	Goes level wise
+Less memory	More memory
+Not optimal	Optimal
+Faster for deep search	Better for shortest path
+
+
+
+---
+
+2) A* Algorithm and 8 Puzzle
+
+Informed Search
+
+Uses extra information called heuristic.
+
+Helps reach goal faster.
+
+More efficient than uninformed search.
+
+
+
+---
+
+Heuristic Function
+
+Definition
+
+Heuristic estimates how close current state is to goal state.
+
+Represented as:
+
+h(n)
+
+
+---
+
+A* Algorithm
+
+Formula
+
+f(n)=g(n)+h(n)
+
+Where:
+
+g(n) = actual cost from start node
+
+h(n) = estimated cost to goal
+
+f(n) = total cost
+
+
+Advantages
+
+Complete and optimal
+
+Faster than many search algorithms
+
+Expands fewer nodes
+
+
+Disadvantages
+
+High memory usage
+
+Complex for large problems
+
+
+
+---
+
+8 Puzzle Problem
+
+Definition
+
+Puzzle with numbers 1–8 and one blank space.
+
+Goal is arranging numbers in correct order.
+
+
+Rules
+
+Move tiles horizontally or vertically.
+
+Only one tile can move into blank space.
+
+
+Why A* is used?
+
+Finds shortest path efficiently.
+
+Uses heuristic to reduce search space.
+
+
+
+---
+
+3) Selection Sort (Greedy Technique)
+
+Definition
+
+Selection sort repeatedly selects smallest element and places it at correct position.
+
+
+---
+
+Steps
+
+1. Find smallest element.
+
+
+2. Swap with first position.
+
+
+3. Repeat for remaining array.
+
+
+
+
+---
+
+Time Complexity
+
+O(n^2)
+
+Best, Average and Worst Case
+
+All are O(n²)
+
+
+
+---
+
+Space Complexity
+
+O(1)
+
+
+---
+
+Advantages
+
+Simple algorithm
+
+Less memory usage
+
+
+Disadvantages
+
+Slow for large data
+
+More comparisons
+
+
+
+---
+
+Stable Sorting
+
+A sorting algorithm is stable if equal elements maintain original order after sorting.
+
+
+---
+
+4) N-Queen Problem (CSP)
+
+Constraint Satisfaction Problem (CSP)
+
+Components
+
+X → Variables
+
+D → Domain
+
+C → Constraints
+
+
+
+---
+
+N-Queen Problem
+
+Definition
+
+Place N queens on chessboard so that:
+
+No two queens in same row
+
+Same column
+
+Same diagonal
+
+
+
+---
+
+Backtracking
+
+Definition
+
+Recursive technique that tries solutions and removes wrong choices.
+
+Steps
+
+1. Place queen safely.
+
+
+2. Move to next column.
+
+
+3. If conflict occurs, backtrack.
+
+
+4. Continue till solution found.
+
+
+
+Advantages
+
+Efficient for decision problems.
+
+Reduces unnecessary calculations.
+
+
+
+---
+
+Branch and Bound
+
+Definition
+
+Optimization technique that avoids useless branches using bounds.
+
+Difference
+
+Backtracking	Branch and Bound
+
+Used for decision problems	Used for optimization
+Uses DFS	Uses BFS/DFS
+Uses feasibility function	Uses bounding function
+
+
+
+---
+
+5) Chatbot
+
+Definition
+
+A chatbot is a computer program that communicates with humans using natural language.
+
+
+---
+
+Types of Chatbots
+
+Rule-Based Chatbot
+
+Works on predefined rules.
+
+Good for simple tasks.
+
+
+AI / Machine Learning Chatbot
+
+Learns from conversations.
+
+Handles complex queries.
+
+
+
+---
+
+Advantages of Chatbots
+
+24×7 availability
+
+Fast response
+
+Reduces manpower
+
+Improves customer experience
+
+Automates repetitive work
+
+
+
+---
+
+Applications
+
+Banking
+
+Healthcare
+
+E-commerce
+
+Travel
+
+Customer support
+
+
+
+---
+
+Very Important Viva Questions
+
+DFS/BFS
+
+1. What is uninformed search?
+
+
+2. Difference between DFS and BFS?
+
+
+3. Which data structure is used in DFS and BFS?
+
+
+4. Time complexity of BFS?
+
+
+
+
+---
+
+A*
+
+1. What is heuristic function?
+
+
+2. Formula of A* algorithm?
+
+
+3. Why is A* better than uninformed search?
+
+
+4. What is 8 puzzle problem?
+
+
+
+
+---
+
+Selection Sort
+
+1. Time complexity of selection sort?
+
+
+2. Is selection sort stable?
+
+
+3. Space complexity?
+
+
+
+
+---
+
+N-Queen
+
+1. What is CSP?
+
+
+2. Define backtracking.
+
+
+3. Constraints in N-Queen problem?
+
+
+
+
+---
+
+Chatbot
+
+1. What is chatbot?
+
+
+2. Types of chatbot?
+
+
+3. Benefits of chatbot?
+
+
+4. Difference between rule-based and AI chatbot?
+
+
+
+
+---
+
+Important One-Line Definitions
+
+Graph → Collection of vertices and edges.
+
+Queue → FIFO data structure.
+
+Stack → LIFO data structure.
+
+Heuristic → Estimate to reach goal.
+
+Backtracking → Undo wrong choices recursively.
+
+CSP → Problem solved under constraints.
+
+Chatbot → Software that talks with humans.S
